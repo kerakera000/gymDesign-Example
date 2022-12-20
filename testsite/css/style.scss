@@ -373,13 +373,76 @@ p{
     &__access-content{
         width: 50%;
         height: 100%;
+        padding-top: 5.17vw;
+        padding-left: 7.14vw;
         &--title{
             font-size: 2.9vw;
-
+        }
+        &--flex{
+            display: flex;
+            height: auto;
+            margin-top: 2.28vw;
+            &--box{
+                margin-right: 2vw;
+                &--list{
+                    font-family: 'Noto Sans JP', sans-serif;
+                    font-weight: 700;
+                    margin-bottom: 1.14vw;
+                    font-size: 0.92vw;
+                    line-height: 1.64vw;
+                }
+            }
+            &--sub-box{
+                &--list{
+                    font-family: 'Noto Sans JP', sans-serif;
+                    font-weight: 500;
+                    font-size: 0.92vw;
+                    line-height: 1.64vw;
+                    margin-bottom: 1.14vw;
+                }
+            }
         }
     }
     &__nav-content{
         width: 50%;
         height: 100%;
+        &--box{
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 5.46vw;
+            padding-right: 7.85vw;
+            &--list{
+                font-family: 'Noto Sans JP', sans-serif;
+                font-weight: 700;
+                font-size: 1.07vw;
+                padding-left: 2.64vw;
+                &--drop-down{
+                    &--list{
+                        font-family: 'Noto Sans JP', sans-serif;
+                        font-weight: 500;
+                        padding-top: 0.78vw;
+                        line-height: 1.35vw;
+                        font-size: 0.92vw;
+                    }
+                }
+            }
+        }
+        &-line{
+            width: 42.85vw;
+            height: 1px;
+            margin-top: 1.96vw;
+            margin-bottom: 1.46vw;
+            background-color: #FFFFFF;
+        }
+        &--sub-box{
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 7.85vw;
+            &--list{
+                font-family: 'Noto Sans JP', sans-serif;
+                font-weight: 500;
+                padding-left: 1.4vw;
+            }
+        }
     }
 }
