@@ -95,21 +95,21 @@
             <div class="service__content--text-content--block"></div>
             <p class="service__content--text-content--text">ジムの強み詳細記事を記入します。ジムのコンセプトなどを書く想定です。ジムの強み詳細記事を記入します。ジムのコンセプトなどを書く想定です。ジムの強み詳細記事を記入します。ジムのコンセプトなどを書く想定です。</p>
         </div>
-        <div class="service__content--img-content">
-            <img src="" alt="">
-        </div>
+        <img class="service__content--img-content\" src="<?php echo get_stylesheet_directory_uri(); ?>/images/service1.png" alt="">
     </div>
     <div class="service__content contentsub">
-        <div class="service__content--img-content">
-            <img src="" alt="">
-        </div>
-        <div class="service__content--text-content">
+            <img class="service__content--img-content\" src="<?php echo get_stylesheet_directory_uri(); ?>/images/service2.png" alt="">
+        <div class="service__content--text-content text-contentsub">
             <p class="subtitle">SUBTITLE</p>
             <h2 class="service__content--text-content--title">リード文です。ジムの強みとかを わかりやすく記載</h2>
             <div class="service__content--text-content--block"></div>
             <p class="service__content--text-content--text">ジムの強み詳細記事を記入します。ジムのコンセプトなどを書く想定です。ジムの強み詳細記事を記入します。ジムのコンセプトなどを書く想定です。ジムの強み詳細記事を記入します。ジムのコンセプトなどを書く想定です。</p>
         </div>
     </div>
+</section>
+
+<section class="blog">
+    
 </section>
 
 <?php get_footer(); ?>
