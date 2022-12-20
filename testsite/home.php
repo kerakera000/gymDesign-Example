@@ -10,7 +10,7 @@
         </p>
     </div>
     <div class="top__title-img-content">
-        <img class="top__title-img-content--img" src="bloginfo('stylesheet_directory'); ?>/testsite/images/top-image.svg" alt="何もない">
+        <img class="top__title-img-content--img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/top-image.png" alt="何もない">
     </div>
     <div class="top__scroll-content">
         <div class="top__scroll-content--relative">

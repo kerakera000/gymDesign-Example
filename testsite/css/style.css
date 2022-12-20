@@ -147,7 +147,12 @@ h2 {
 .top__title-img-content {
   width: 54vw;
   height: 100%;
-  background-color: #490b07;
+}
+.top__title-img-content--img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .top__scroll-content {
   width: 1vw;
@@ -242,11 +247,15 @@ h2 {
 .news__inner--content--news-title :hover {
   text-decoration: underline;
 }
+.news__button {
+  margin-left: auto;
+}
 .news__button--text {
   color: #111111;
   font-size: 1vw;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 700;
+  letter-spacing: 0.15vw;
 }
 
 .karioki {

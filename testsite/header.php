@@ -36,7 +36,7 @@
 					</li>
 					<li class="header__nav--list-box--list">
 						<div class="header__nav--list-box--list--contact">
-						<img class="header__nav--list-box--list--contact--icon" src="<?php bloginfo('stylesheet_directory'); ?>./images/nav-contact.png" alt="なし">
+						<img class="header__nav--list-box--list--contact--icon" src="<?php echo get_stylesheet_directory_uri(); ?>/images/nav-contact.png" alt="なし">
 						<p class="header__nav--list-box--list--contact--text">お問い合わせ</p>
 						</div>
 					</li>
