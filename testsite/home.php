@@ -68,7 +68,7 @@
     </div>
     <button class="news__button">
         <p class="news__button--text">VIEW ALL</p>
-        <span></span>
+        <img class="news__button--image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/news-view-all.png" alt="">
     </button>
 </section>
 
