@@ -10,7 +10,7 @@
         </p>
     </div>
     <div class="top__title-img-content">
-        <img class="top__title-img-content--img" src="bloginfo('stylesheet_directory'); ?>/testsite/images/top-image.png" alt="">
+        <img class="top__title-img-content--img" src="bloginfo('stylesheet_directory'); ?>/testsite/images/top-image.svg" alt="何もない">
     </div>
     <div class="top__scroll-content">
         <div class="top__scroll-content--relative">
@@ -22,7 +22,9 @@
 </section>
 
 <section class="news">
-    <p class="news__title">NEWS</p>
+    <div class="news__title-box">
+        <p class="news__title-box--text">NEWS</p>
+    </div>
     <div class="news__inner">
         <?php
             /*選択したタクソノミー の項目取得*/
@@ -50,12 +52,11 @@
 
             <div class="news__inner--content">
                 <p class="news__inner--content--news-time">
-                    <?php the_time('Y.m.d'); ?> ｜
+                    <?php the_time('Y.m.d'); ?>
                 </p>
+                <div class="news__inner--content--block">|</div>
                 <p class="news__inner--content--news-title">
-                    <a href="<?php echo esc_url(the_permalink()); ?>">
-                        <?php echo $title ?>
-                    </a>
+                    <?php echo $title ?>
                 </p>
             </div>
 
@@ -65,6 +66,12 @@
         <?php  } ?>
         <?php wp_reset_postdata(); /* クエリ(サブループ)のリセット */ ?>
     </div>
+    <button class="news__button">
+        <p class="news__button--text">VIEW ALL</p>
+        <span></span>
+    </button>
 </section>
+
+<section class="karioki"></section>
 
 <?php get_footer(); ?>

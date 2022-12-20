@@ -186,35 +186,67 @@ h2{
 
 .news{
     width: 100%;
-    text-align: center;
-    &__title{
-        padding: 2vw 0;
+    height: 4.9vw;
+    display: flex;
+    background-color: #F7F7F7;
+    &__title-box{
+        width: 13vw;
+        padding: 1.7vw 5.4vw 1.6vw 3.4vw;
+        margin-right: 1.5vw;
+        height: inherit;
+        color: white;
+        background-color: #111111;
+        border-bottom-right-radius: 7.1vw;
+        &--text{
+            display: inline-block;
+            font-size: 1.28vw;
+            letter-spacing: 0.19vw;
+            line-height: 1.5vw;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+        }
     }
     &__inner{
-        width: 40vw;
-        height: 20vw;
-        border: 3px solid rgb(107, 106, 106);
+        width: auto;
+        height: 4.9vw;
         display: inline-block;
-        background-color: rgb(228, 227, 225);
         &--content{
             display: flex;
-            font-size: 1.2vw;
-            margin: 2vw 2vw 0 ;
-            border-bottom: solid 0.2vw darkslategrey;
+            padding: 1.71vw 0 1.78vw;
             &--news-time{
-                padding-right: 1vw;
-                padding-bottom: 0.5vw;
+                font-size: 1.07vw;
+                font-family: 'Noto Sans JP', sans-serif;
+                font-weight: 700;
+                padding-right: 1.75vw;
+            }
+            &--block{
+                color: #9D9D9D;
+                padding-right: 2.1vw;
             }
             &--news-title{
-                padding-bottom: 0.5vw;
-                a{
-                    text-decoration: none;
-                    color: rgb(27, 65, 97);
-                }
+                font-size: 1vw;
+                text-decoration: none;
+                color: #111111;
+                font-family: 'Noto Sans JP', sans-serif;
+                font-weight: 700;
                 & :hover{
                     text-decoration: underline;
                 }
             }
         }
     }
+    &__button{
+        &--text{
+            color: #111111;
+            font-size: 1vw;
+            font-family: 'Noto Sans JP', sans-serif;
+            font-weight: 700;
+        }
+    }
+}
+
+.karioki{
+    height: 70vw;
+    width: 100%;
+    background-color: #490b07;
 }
