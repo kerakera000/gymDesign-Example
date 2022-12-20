@@ -72,6 +72,19 @@
     </button>
 </section>
 
-<section class="karioki"></section>
+<section class="about">
+    <div class="about__content">
+        <p class="about__content--subtitle subtitle">ABOUT</p>
+        <h2 class="about__content--title">ジムについて</h2>
+        <div class="about__content--block"></div>
+        <p class="about__content--text">
+            ジムの強み詳細記事を記入します。ジムのコンセプトなどを書く想定です。<br>
+            ジムの強み詳細記事を記入します。ジムのコンセプトなどを書く想定です。<br>
+            ジムの強み詳細記事を記入します。ジムのコンセプトなどを書く想定です。</p>
+        <button class="about__content--button">
+            <a class="about__content--button--text">MORE</a>
+        </button>
+    </div>
+</section>
 
 <?php get_footer(); ?>
