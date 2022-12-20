@@ -302,3 +302,30 @@ p{
         }
     }
 }
+
+.service{
+    width: 100%;
+    height: auto;
+    background-color: #F7F7F7;
+    padding: 0 7.14vw;
+    &__content{
+        height: 29.92vw;
+        margin-bottom: 5vw;
+        padding-top: 5.7vw;
+        display:flex;
+        &--text-content{
+            width: 50%;
+            &--title{
+                font-weight: 700;
+            }
+        }
+        &--img-content{
+            width: 50%;
+        }
+    }
+    .contentsub{
+        margin: 0;
+        padding-top: 0;
+        padding-bottom: 5vw;
+    }
+}

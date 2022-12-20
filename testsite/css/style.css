@@ -309,4 +309,31 @@ p {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: #FFFFFF;
+}
+
+.service {
+  width: 100%;
+  height: auto;
+  background-color: #F7F7F7;
+  padding: 0 7.14vw;
+}
+.service__content {
+  height: 29.92vw;
+  margin-bottom: 5vw;
+  padding-top: 5.7vw;
+  display: flex;
+}
+.service__content--text-content {
+  width: 50%;
+}
+.service__content--text-content--title {
+  font-weight: 700;
+}
+.service__content--img-content {
+  width: 50%;
+}
+.service .contentsub {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 5vw;
 }/*# sourceMappingURL=style.css.map */

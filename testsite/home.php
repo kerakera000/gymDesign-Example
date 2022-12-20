@@ -87,4 +87,29 @@
     </div>
 </section>
 
+<section class="service">
+    <div class="service__content">
+        <div class="service__content--text-content">
+            <p class="subtitle">SUBTITLE</p>
+            <h2 class="service__content--text-content--title">リード文です。ジムの強みとかを わかりやすく記載</h2>
+            <div class="service__content--text-content--block"></div>
+            <p class="service__content--text-content--text">ジムの強み詳細記事を記入します。ジムのコンセプトなどを書く想定です。ジムの強み詳細記事を記入します。ジムのコンセプトなどを書く想定です。ジムの強み詳細記事を記入します。ジムのコンセプトなどを書く想定です。</p>
+        </div>
+        <div class="service__content--img-content">
+            <img src="" alt="">
+        </div>
+    </div>
+    <div class="service__content contentsub">
+        <div class="service__content--img-content">
+            <img src="" alt="">
+        </div>
+        <div class="service__content--text-content">
+            <p class="subtitle">SUBTITLE</p>
+            <h2 class="service__content--text-content--title">リード文です。ジムの強みとかを わかりやすく記載</h2>
+            <div class="service__content--text-content--block"></div>
+            <p class="service__content--text-content--text">ジムの強み詳細記事を記入します。ジムのコンセプトなどを書く想定です。ジムの強み詳細記事を記入します。ジムのコンセプトなどを書く想定です。ジムの強み詳細記事を記入します。ジムのコンセプトなどを書く想定です。</p>
+        </div>
+    </div>
+</section>
+
 <?php get_footer(); ?>
