@@ -95,10 +95,10 @@
             <div class="service__content--text-content--block"></div>
             <p class="service__content--text-content--text">ジムの強み詳細記事を記入します。ジムのコンセプトなどを書く想定です。ジムの強み詳細記事を記入します。ジムのコンセプトなどを書く想定です。ジムの強み詳細記事を記入します。ジムのコンセプトなどを書く想定です。</p>
         </div>
-        <img class="service__content--img-content\" src="<?php echo get_stylesheet_directory_uri(); ?>/images/service1.png" alt="">
+        <img class="service__content--img-content" src="<?php echo get_stylesheet_directory_uri(); ?>/images/service1.png" alt="">
     </div>
     <div class="service__content contentsub">
-            <img class="service__content--img-content\" src="<?php echo get_stylesheet_directory_uri(); ?>/images/service2.png" alt="">
+            <img class="service__content--img-content img-contentsub" src="<?php echo get_stylesheet_directory_uri(); ?>/images/service2.png" alt="">
         <div class="service__content--text-content text-contentsub">
             <p class="subtitle">SUBTITLE</p>
             <h2 class="service__content--text-content--title">リード文です。ジムの強みとかを わかりやすく記載</h2>
@@ -109,7 +109,30 @@
 </section>
 
 <section class="blog">
-    
+    <div class="blog__content">
+        <p class="blog__content--subtitle subtitle">BLOG</p>
+        <h2 class="blog__content--title">ブログ</h2>
+        <div class="blog__content--block"></div>
+        <!-- ブログ内容 -->
+        <?php
+            $args = array(
+                'post_type' => 'blog', //カスタム投稿タイプ名の指定
+                'posts_per_page' => -1, //投稿の取得数の指定
+            );
+            $the_query = new WP_Query( $args );
+        ?>
+
+        <?php if ( $the_query->have_posts() ): ?>
+            <ul>
+                <?php while ( $the_query->have_posts() ): $the_query->the_post(); ?>
+                    <li>
+                        <?php the_post_thumbnail('thumbnail'); ?>
+                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                    </li>
+                <?php endwhile; ?>
+            </ul>
+        <?php endif; wp_reset_postdata(); ?>
+    </div>
 </section>
 
 <?php get_footer(); ?>

@@ -22,6 +22,11 @@
 		<header class="header">
 			<nav class="header__nav">
 				<h2 class="header__nav--title">LOGO</h2>
+				<div class="header__nav--button">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 				<ul class="header__nav--list-box">
 					<li class="header__nav--list-box--list"><a href="">NEWS</a></li>
 					<li class="header__nav--list-box--list"><a href="">BLOG</a></li>
