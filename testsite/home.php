@@ -113,25 +113,48 @@
         <p class="blog__content--subtitle subtitle">BLOG</p>
         <h2 class="blog__content--title">ブログ</h2>
         <div class="blog__content--block"></div>
-        <!-- ブログ内容 -->
-        <?php
-            $args = array(
-                'post_type' => 'blog', //カスタム投稿タイプ名の指定
-                'posts_per_page' => -1, //投稿の取得数の指定
-            );
-            $the_query = new WP_Query( $args );
-        ?>
 
-        <?php if ( $the_query->have_posts() ): ?>
-            <ul>
-                <?php while ( $the_query->have_posts() ): $the_query->the_post(); ?>
-                    <li>
-                        <?php the_post_thumbnail('thumbnail'); ?>
-                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                    </li>
-                <?php endwhile; ?>
-            </ul>
-        <?php endif; wp_reset_postdata(); ?>
+        <!-- ブログ内容 -->
+        <div class="blog__content--blog-content">
+            <?php
+                $args = array(
+                    'post_type' => 'blog', //カスタム投稿タイプ名の指定
+                    'posts_per_page' => 3, //投稿の取得数の指定
+                    'taxonomy' => 'blog-tag'
+                );
+                $the_query = new WP_Query( $args );
+            ?>
+
+            <?php if ( $the_query->have_posts() ):?>
+                <ul class="blog__content--blog-content--list-box">
+                    <?php while ( $the_query->have_posts() ): $the_query->the_post();?>
+                        <li class="blog__content--blog-content--list-box--list">
+                            <a href="<?php the_permalink(); ?>">
+                                <div class="blog__content--blog-content--list-box--list--img">
+                                    <?php the_post_thumbnail(); ?>
+                                </div>
+                                <div class="blog__content--blog-content--list-box--list--tag">
+                                    <?php
+                                        $terms = get_the_terms( $post -> ID,'blog-tag' );
+                                        foreach ( $terms as $term ){
+                                            echo '<p class="blog__content--blog-content--list-box--list--tag--item">'.$term->name.'</p>'; //タームのリンク
+                                        }
+                                    ?>
+                                </div>
+                                <p class="blog__content--blog-content--list-box--list--time">
+                                    <?php the_time('Y.m.d'); ?>
+                                </p>
+                                <p class="blog__content--blog-content--list-box--list--title"><?php the_title(); ?></p>
+                            </a>
+                        </li>
+                    <?php endwhile; wp_reset_postdata();?>
+                </ul>
+            <?php endif; ?>
+        </div>
+
+        <button class="blog__content--button">
+            <a class="blog__content--button--text">MORE</a>
+        </button>
     </div>
 </section>
 
