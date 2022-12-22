@@ -844,7 +844,7 @@ p {
     width: 25rem;
     height: 5.7rem;
     border-radius: 2.9rem;
-    margin-top: 6rem;
+    margin-top: 0;
   }
   .blog__content--button--text {
     font-size: 16px;
