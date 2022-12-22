@@ -827,6 +827,11 @@ p {
     margin: 4rem 0;
     padding: 0 4rem;
   }
+  .blog__content--block {
+    margin-top: 1.2rem;
+    width: 1.3rem;
+    height: 1.3rem;
+  }
   .blog__content--blog-content--list-box {
     flex-direction: column;
   }
